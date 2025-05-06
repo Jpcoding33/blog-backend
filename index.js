@@ -29,12 +29,7 @@ mongoose
   .then(console.log("Connected to MONGODB"))
   .catch((err) => console.log(err));
 
-app.use(
-  cors({
-    origin: "https://blog-frontend-5swe.onrender.com/",
-    credentials: true,
-  })
-);
+app.use(cors({ origin: "*" }));
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
