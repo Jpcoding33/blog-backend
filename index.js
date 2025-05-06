@@ -31,7 +31,7 @@ mongoose
 
 app.use(
   cors({
-    origin: "https://blog-frontend-5swe.onrender.com",
+    origin: "https://blog-frontend-5swe.onrender.com/",
     credentials: true,
   })
 );
